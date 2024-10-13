@@ -1103,12 +1103,13 @@ if selected == "Overview":
             elif month == "April" or month == "June" or month == "September" or month == "November":
                 x = list(range(1,31))
             else:
+            
                 x = list(range(1,29))
         
             fig = go.Figure()
             fig.add_trace(go.Scatter(
                 x=x,
-                y=[10 ,10, 9, 5, 8, 1, 10, 5, 9, 10, 5, None, 10, 6, 5, 1, 1, 5, 7, 10, None, 5, 10, 3, 5, 0, 10, None, 9, 5, 5],
+                y=[6 ,8, 3,6, 9, 5, None, None, None, None, None, None, None, 7, None, None, None, None, None, None, None, None, None, None, None, None, None, 5, None, 4, None],
                name = '<b>No</b> Gaps', # Style name/legend entry with html tags
                connectgaps=True # override default to connect the gaps
             ))
